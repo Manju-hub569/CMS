@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/table.css">
+    <style>
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+label {
+    color:white;
+}
+
+.table-div {
+    height:calc(100vh - 42px);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.table-brd {
+    max-height: 500px;
+    overflow:auto;
+}
+
+#customers {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #trash {
+    font-family: FontAwesome;
+    color:black;
+    cursor:pointer;
+  }
+
+  #id-trash {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+  }
+
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(78, 70, 100);
+    color: white;
+    position: sticky;
+    top:0;
+    left:0;
+  }
+    </style>
+</head>
+<body>
+    {{>navbar}}
+    {{>regsidebar}}
+    <div class = 'table-div'>
+        <div class = 'table-brd'>
+
+<table id="customers">
+  <tr>
+    <th>Name</th>
+    <th>Reg No</th>
+    <th>Date Of Birth</th>
+    <th>Address</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Delete</th>
+  </tr>
+  {{#each dat}}
+  <tr>
+    <td>{{name}}</td>
+    <td>{{reg}}</td>
+    <td>{{dob}}</td>
+    <td>{{address}}</td>
+    <td>{{phone}}</td>
+    <td>{{email}}</td>
+    <td id = 'id-trash'>
+        <a href='/delet/{{_id}}'>
+        <label id = 'trash' class = 'fas fa-trash'></label>
+        </a>
+    </td>
+  </tr>
+  {{/each}}
+</table>
+
+        </div>
+
+        <script>
+function manju() {
+    const man = document.getElementById('check');
+    if(man.checked){
+        const side = document.getElementById('sidebar');
+        side.style.transform = 'translateX(0px)';
+    }else {
+        const side = document.getElementById('sidebar');
+        side.style.transform = 'translateX(-200px)';
+    }
+}
+        </script>
+    </div>
+</body>
+</html>

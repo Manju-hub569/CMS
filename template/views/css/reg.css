@@ -1,0 +1,40 @@
+.border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:calc(100vh - 42px);
+    font-family: FontAwesome;
+}
+
+input[type = date] {
+    outline:none;
+    padding:10px;
+    border: 1px solid rgb(149, 137, 182);
+    color:rgb(59, 49, 87);
+    font-size: 15px;
+}
+
+textarea {
+    outline:none;
+    border: 1px solid rgb(149, 137, 182);
+    padding:10px;
+    font-size: 15px;
+    font-family: FontAwesome;
+}
+
+.reg-inp {
+    margin-bottom:4px;
+}
+
+.inpstyle {
+    font-family: FontAwesome;
+    width:220px;
+    padding:10px;
+}
+
+a {
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    color:rgb(221, 212, 245);
+}

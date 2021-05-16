@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/reg.css">
+    </head>
+    <body>
+
+        <div class = 'sidebar' id = 'sidebar'>
+            <div class = 'off'>
+                <label for="check" onclick = 'manju()' style = 'cursor:pointer'>
+                <span style = 'margin-bottom:3px'></span>
+                <span style = 'margin-bottom:3px'></span>
+                <span style = 'margin-bottom:3px'></span>
+                </label>
+            </div>
+            <ul>
+                <li onclick= 'chang();'>
+                <label class="fas fa-user"></label>
+                    <a href="/fprfle">Profile</a>
+                </li>
+                <li onclick= 'change();'>
+                <label class="fas fa-bell"></label>
+                    <a href="/fnotify">Notification</a>
+                </li>
+                <li>
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    <a href="/logout">Logout</a>
+                </li>
+            </ul>
+        </div>     
+    </body>
+</html>

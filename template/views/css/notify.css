@@ -1,0 +1,12 @@
+* {
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.notify-brd {
+    height:calc(100vh - 42px);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

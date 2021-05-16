@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/reg.css">
+    </head>
+        <body>
+            {{>navbar}}
+            {{>regsidebar}}
+                    {{reg}}
+            <div class = 'border'>
+                <form action="/fregister" method="POST">
+                    <div class="reg-form">
+                        <div class = 'reg-inp'>
+                            <input type="text" class = 'inpstyle' name = 'name' id = 'text' placeholder="&#xf007; Enter Name">
+                        </div>
+                        <div class = 'reg-inp'>
+                            <input type="text" class = 'inpstyle' name = 'reg' id = 'reg' placeholder="&#xf11c; Enter Reg Number">
+                        </div>
+                        <div class = 'reg-inp'>
+                            <input type="date" class = 'inpstyle' name = 'dob'>
+                        </div>
+                        <div class = 'reg-inp'>
+                            <textarea name="address" id="txtarea" cols="25" rows="10" placeholder="&#xf015; Enter Address"></textarea>
+                        </div>
+                        <div class = 'reg-inp'>
+                            <input type="text" class = 'inpstyle' name = 'phone' id = 'phone' placeholder="&#xf095; Enter Phone">
+                        </div>
+                        <div class = 'reg-inp'>
+                            <input type="text" class = 'inpstyle' name = 'email' id = 'email' placeholder="&#xf0e0; Enter Email">
+                        </div>
+                        <div class = 'reg-inp'>
+                            <button class = 'btn'>
+                                <strong>submit</strong>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        <script src="js/regmain.js"></script>
+        </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/table.css">
+</head>
+<body>
+    {{>navbar}}
+    {{>regsidebar}}
+    <div class = 'table-div'>
+        <div class = 'table-brd'>
+
+<table id="customers">
+  <tr>
+    <th>Name</th>
+    <th>Reg No</th>
+    <th>Date Of Birth</th>
+    <th>Address</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Delete</th>
+  </tr>
+  {{#each dat}}
+  <tr>
+    <td>{{name}}</td>
+    <td>{{reg}}</td>
+    <td>{{dob}}</td>
+    <td>{{address}}</td>
+    <td>{{phone}}</td>
+    <td>{{email}}</td>
+    <td id = 'id-trash'>
+        <a href='/delet/{{_id}}'>
+        <label id = 'trash' class = 'fas fa-trash'></label>
+        </a>
+    </td>
+  </tr>
+  {{/each}}
+</table>
+
+        </div>
+
+        <script src="./js/regmain.js"></script>
+    </div>
+</body>
+</html>

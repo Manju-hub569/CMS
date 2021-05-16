@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="./css/notify.css">
+    </head>
+    <body>
+        {{>navbar}}
+        {{>regsidebar}}
+    <div class = 'notify-brd'>
+        <form action = "/notify" method = "POST">
+            {{msg}}
+        <div class = 'content'>
+            <textarea class = 'not-box' name="notification" id="" cols="40" rows="20" placeholder="Notification..."></textarea>
+            <div class = 'reg-inp'>
+                <button class = 'btn' style = 'margin-top: 5px'>
+                   <strong>send</strong>
+                </button>
+            </div>
+        </div>
+        </form>
+    </div>
+
+<script src="./js/regmain.js"></script>
+    </body>
+</html>

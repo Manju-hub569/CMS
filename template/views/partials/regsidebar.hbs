@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/reg.css">
+    </head>
+    <body>
+
+        <div class = 'sidebar' id = 'sidebar'>
+            <div class = 'off'>
+                <label for="check" onclick = 'manju()' style = 'cursor:pointer'>
+                <span style = 'margin-bottom:3px'></span>
+                <span style = 'margin-bottom:3px'></span>
+                <span style = 'margin-bottom:3px'></span>
+                </label>
+            </div>
+            <ul>
+                <li onclick= 'chang();'>
+                <label class="fas fa-user"></label>
+                    <a href="/sreg">Student Register</a>
+                </li>
+                <li onclick= 'change();'>
+                <label class="fas fa-user"></label>
+                    <a href="/freg">Faculty Register</a>
+                </li>
+                <li onclick= 'changes();'>
+               <label class="fas fa-database"></label>
+                    <a href="/sdata">Student Data</a>
+                </li>
+                <li onclick= 'changes();'>
+               <label class="fas fa-database"></label>
+                    <a href="/fdata">Faculty Data</a>
+                </li>
+                <li onclick= 'changes();'>
+               <label class="fas fa-bell"></label>
+                    <a href="/notify">Send Notification</a>
+                </li>
+                <li>
+               <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    <a href="/logout">Logout</a>
+                </li>
+            </ul>
+        </div>     
+    </body>
+</html>
